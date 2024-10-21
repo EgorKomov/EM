@@ -70,7 +70,7 @@ class Book(LibraryItem):
         print(f"Всего книг в библиотеке: {Book.total_available_books}")
 
 
-class DigitalBook(LibraryItem):
+class DigitalBook(Book):
     def __init__(self, title: str, author: str, year: int, pages: int, file_format: str):
         super().__init__(title, author, year, pages)
         self.file_format = file_format
